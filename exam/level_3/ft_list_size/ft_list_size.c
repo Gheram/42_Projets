@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_list_size.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jrameau <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ghtouman <ghtouman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/06 05:26:42 by jrameau           #+#    #+#             */
-/*   Updated: 2019/01/14 18:05:42 by ghtouman         ###   ########.fr       */
+/*   Created: 2019/01/15 08:53:41 by ghtouman          #+#    #+#             */
+/*   Updated: 2019/01/15 09:31:34 by ghtouman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include <fcntl.h>
+#include "ft_list.h"
 
-int		main(int argc, char **argv)
+int		ft_list_size(t_list *begin_list)
 {
-	int		fd;
-	char	*line;
-	(void)argv;
+	int		size;
+	t_list	*list;
 
-	fd = open("2", O_RDWR);
-	while (get_next_line(0, &line) == 1)
+	size = 0;
+	list = begin_list;
+	if (list)
 	{
-		ft_putendl_fd(line, fd);
-		free(line);
+		while (!(list->next))
+		{
+			list = list->next;
+			size++;
+		}
 	}
-	if (argc == 2)
-		close(fd);
+	return (size - 1);
 }

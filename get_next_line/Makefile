@@ -6,7 +6,7 @@
 #    By: ghtouman <ghtouman@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/04/26 13:02:21 by ghtouman          #+#    #+#              #
-#    Updated: 2018/06/29 19:38:27 by ghtouman         ###   ########.fr        #
+#    Updated: 2019/01/14 17:57:35 by ghtouman         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ LIB_PATH = ./libft/
 LIB = libft/libft.a
 
 SRC = get_next_line.c	\
-	 main_mutifd.c
+	 main.c
 
 OBJ = $(SRC:.c=.o)
 
