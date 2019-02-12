@@ -1,0 +1,3 @@
+Dans le fichier: .ssh/authorized_keys
+
+trouve avec: cat /etc/ssh/sshd_config | grep AuthorizedKeysFile

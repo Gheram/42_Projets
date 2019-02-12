@@ -1,0 +1,14 @@
+#faire dans bash non dans zsh
+read -p "Entrer le nom de l'utilisateur a supprimer :" user
+
+# on blogue le compte
+sudo passwd -l $user
+
+#on ferme les programmes que l'utiisateur a ouvere
+sudo killall -KILL -u $user
+
+#et faut supprimer les tache CRON dans son fichier crontab
+sudo crontab -r -u $user
+
+#supprime le repertoire home et sa boite mail
+sudo userdel -r $user

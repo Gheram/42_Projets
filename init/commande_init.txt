@@ -1,0 +1,23 @@
+Outils système:
+
+df			savoir l'espace disaue utiliser
+top			affiche les processus en cour d' utilisation
+ps			les processus qui tourne
+kill		tue le processus, le ferme
+
+Outils réseau:
+
+ifconfig
+
+ifconfig	configurer, et afficher les interface de notre réseau
+ping		permet d'envoyer un packet vers un autre serveur qui le retourne
+netstat		permet d'afficher les connections et les ports utiliser sur notre serveur
+traceroute	permet d'afficher d'un point A à un point B l'itimeraire
+
+Fichier de configuration:
+
+host		permet de definir une ip et un nom maniellement
+networks	permet de donner un nom logique a un reseau
+host.conf	permet de dire si c'est un fichier de cnfiguration qui resoud les nom de domaine ou si c'est le service bind a travers les serveur DNS
+resolv.conf permet de definir nos serveur de nom
+interfaces	permet de configurer l'ensemble de nos interface systeme

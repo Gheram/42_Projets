@@ -1,0 +1,2 @@
+ifconfig -L en1 | grep "ether" | cut -d " " -f2
+#ifconfig -v en1

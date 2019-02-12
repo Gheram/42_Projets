@@ -1,0 +1,37 @@
+#!/bin/bash
+
+read -p "Voulez-vous lancer le script ? (y/n) "  maj
+if [ $maj = "y" ] || [ $maj = "o" ] || [ $maj = "yes" ] || [ $maj = "Y" ] || [ $maj = "O" ] || [ $maj = "oui" ] || [ $maj = "OUI" ] || [ $maj = "YES" ]
+then
+	sudo apt install git
+	sudo apt install zsh
+	sudo apt install curl
+	sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	sudo apt install vim
+	echo "set nu\nsy on\nset mouse=a\nset smartindent\nset ruler" > ~/.vimrc
+else
+	echo "\n"
+	echo "                                          ****"
+	echo "                                        **    **"
+	echo "                                        **    **"
+	echo "                                        **    **"
+	echo "                                        **    **"
+	echo "                                        **    **"
+	echo "                                    ******    ******"
+	echo "                                  **    **    **    ****"
+	echo "                                  **    **    **    **  **"
+	echo "                          ******  **    **    **    **    **"
+	echo "                          **    ****                **    **"
+	echo "                          **      **                      **"
+	echo "                            **    **                      **"
+	echo "                             ***  **                      **"
+	echo "                              **                          **"
+	echo "                               ***                        **"
+	echo "                                **                       **"
+	echo "                                 ***                    **"
+	echo "                                  **                    **"
+	echo "                                   ***                ***"
+	echo "                                    **                **"
+	echo "                                    ********************"
+	echo "\n"
+fi

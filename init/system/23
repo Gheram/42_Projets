@@ -1,0 +1,5 @@
+Il suffit d'utiliser la commande adduser "nomutilisateur".
+Le repertoire utilisateur sera home/nomutilisateur
+Les options par defaut de l'utilisateur seront inscrites dans le fichier
+de configuration /etc/adduser.conf que l'on peut traiter en mode root.
+La commande su "nom d'utiisateur" pour se connecter en tant que nouvel utilisateur

@@ -1,0 +1,3 @@
+service ssh status
+
+#service se trouve dans le PATH de root mais pas d'un user 
