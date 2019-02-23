@@ -1,0 +1,5 @@
+Credentials cache: API:22257048-676A-4F9C-9655-4EC996E5A6FB
+        Principal: ghtouman@42.FR
+
+		  Issued                Expires               Principal
+		  Feb  5 11:34:40 2018  Feb 12 11:34:22 2018  krbtgt/42.FR@42.F

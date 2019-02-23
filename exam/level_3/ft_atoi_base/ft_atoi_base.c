@@ -6,9 +6,11 @@
 /*   By: ghtouman <ghtouman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/14 19:15:24 by ghtouman          #+#    #+#             */
-/*   Updated: 2019/01/14 19:27:14 by ghtouman         ###   ########.fr       */
+/*   Updated: 2019/02/15 15:37:05 by ghtouman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int		ft_atoi_base(const char *nbr, unsigned int base)
 {
@@ -38,4 +40,10 @@ int		ft_atoi_base(const char *nbr, unsigned int base)
 		i++;
 	}
 	return (result * neg);
+}
+
+
+int main(int argc, char const *argv[]) {
+	printf("%x\n", ft_atoi_base("FFFFFF", 16));
+	return 0;
 }

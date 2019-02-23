@@ -6,14 +6,19 @@
 /*   By: ghtouman <ghtouman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/05 12:02:49 by ghtouman          #+#    #+#             */
-/*   Updated: 2018/04/13 14:53:35 by ghtouman         ###   ########.fr       */
+/*   Updated: 2019/02/13 12:08:11 by ghtouman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
+# define BUFF_SIZE 100
 # include <string.h>
+# include "../libft/libft.h"
+# include <sys/types.h>
+# include <sys/uio.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
@@ -68,6 +73,7 @@ int					*ft_range(int min, int max);
 int					ft_abs(int value);
 int					ft_max(int x, int y);
 int					ft_min(int x, int y);
+int					get_next_line(const int fd, char **line);
 int					ft_count_char(char const *s, char c);
 
 size_t				ft_strlen(const char *str);
