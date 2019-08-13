@@ -6,7 +6,7 @@
 /*   By: tigre <tigre@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/15 16:02:43 by tigre             #+#    #+#             */
-/*   Updated: 2019/02/22 19:39:42 by ghtouman         ###   ########.fr       */
+/*   Updated: 2019/03/19 16:45:16 by ghtouman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ static void	get_size_map(t_mlx *mlx, char *line, char *name)
 	mlx->h = 0;
 	while (get_next_line(fd, &line))
 	{
-		(mlx->h)++;
 		ft_strdel(&line);
+		(mlx->h)++;
 	}
 	ft_strdel(&line);
 	close(fd);
